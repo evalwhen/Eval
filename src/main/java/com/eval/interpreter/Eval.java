@@ -16,7 +16,7 @@ public class Eval implements ExprVisitorI {
   }
 
   public ExprValue visit(VarExpr e) throws VarNameNotFoundException {
-    return env.findBinding(ask, e.varName);
+    return cont.apply(contAsk, env.findBinding(ask, e.varName));
   }
 
   public ExprValue visit(DiffExpr e) {
@@ -33,7 +33,7 @@ public class Eval implements ExprVisitorI {
 
   //TODO: Remove VarNameNotFoundException
   public ExprValue visit(LetExpr e) throws VarNameNotFoundException {
-    ExtendCont(new LetCont(e.varName, e.body, cont));
+    this.cont = new LetCont(e.varName, e.body, this);
     return e.valExpr.Eval(this);
   }
 
@@ -49,7 +49,7 @@ public class Eval implements ExprVisitorI {
     return null;
   }
 
-  private void ExtendCont(Continuation newCont) {
-    cont = newCont;
+  public void extendEnvironment(String varName, ExprValue val) {
+    this.env = new ExtendEnv(varName, val, this.env);
   }
 }

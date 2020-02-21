@@ -13,12 +13,15 @@ class EndCont extends Continuation {
 class LetCont extends Continuation {
   String varName;
   Expression letBody;
-  Continuation savedCont;
+//  Environment env;
+//  Continuation savedCont;
+  ExprVisitorI eval;
 
-  public LetCont(String varName, Expression letBody, Continuation savedCont) {
+
+  public LetCont(String varName, Expression letBody, ExprVisitorI eval) {
     this.varName = varName;
     this.letBody = letBody;
-    this.savedCont = savedCont;
+    this.eval = eval;
   }
 
   ExprValue apply(ContVistorI ask, ExprValue val) {

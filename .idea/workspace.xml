@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/EmptyEnv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/EnvVistorI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExtendEnv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExtendEnvRec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/FindBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/VarNameNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContApplyVistor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/CallExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/CallExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/ConstExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ConstExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/DiffExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/DiffExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/Expression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/IfExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/IfExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/LetExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/LetRecExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetRecExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/ProcedureExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ProcedureExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/VarExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/VarExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/expression/ZeroExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ZeroExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/value/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/BoolValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/value/ExprValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/value/NumValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/NumValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/value/ProcValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ProcValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/value/Procedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Procedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,20 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/FindBinding.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="52">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding>
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#150#151#0" expanded="true" />
@@ -71,8 +38,8 @@
                 <element signature="e#393#394#0" expanded="true" />
                 <element signature="e#556#557#0" expanded="true" />
                 <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +57,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="78">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContApplyVistor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="442">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="e#183#184#0" expanded="true" />
                 <element signature="e#204#205#0" expanded="true" />
@@ -123,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="286">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -173,8 +153,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -184,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/expression/ConstExpr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/expression/DiffExpr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/expression/ZeroExpr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/expression/VarExpr.java" />
@@ -231,9 +209,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExtendEnvRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/VarExpr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExtendEnv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContApplyVistor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java" />
       </list>
     </option>
@@ -288,27 +268,7 @@
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="Eval" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="Continuation.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="LetExpression.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
@@ -395,7 +355,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582277075179</updated>
-      <workItem from="1582277081093" duration="10898000" />
+      <workItem from="1582277081093" duration="12382000" />
     </task>
     <task id="LOCAL-00001" summary="create Expression and ExpreValue.">
       <created>1582282476133</created>
@@ -404,26 +364,43 @@
       <option name="project" value="LOCAL" />
       <updated>1582282476133</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add Environment and Continuation.">
+      <created>1582291795891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582291795891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10898000" />
+    <option name="totallyTimeSpent" value="12382000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1041" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19604701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19604701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32896176" />
+      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.1715847" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -432,7 +409,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Maven" />
@@ -449,7 +426,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create Expression and ExpreValue." />
-    <option name="LAST_COMMIT_MESSAGE" value="create Expression and ExpreValue." />
+    <MESSAGE value="add Environment and Continuation." />
+    <option name="LAST_COMMIT_MESSAGE" value="add Environment and Continuation." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -622,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/VarNameNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -662,10 +633,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="e#183#184#0" expanded="true" />
             <element signature="e#204#205#0" expanded="true" />
@@ -675,24 +660,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="286">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContApplyVistor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="234">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="52">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding>
             <element signature="e#126#127#0" expanded="true" />
             <element signature="e#150#151#0" expanded="true" />
@@ -702,8 +691,8 @@
             <element signature="e#393#394#0" expanded="true" />
             <element signature="e#556#557#0" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
           </folding>
         </state>
       </provider>

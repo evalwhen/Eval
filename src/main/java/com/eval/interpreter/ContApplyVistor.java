@@ -2,11 +2,15 @@ package com.eval.interpreter;
 
 class ContApplyVistor implements ContVistorI {
   public ExprValue visit(EndCont cont, ExprValue val) {
-    return cont.apply(this, val);
+    return val;
   }
 
   public ExprValue visit(LetCont cont, ExprValue val) throws VarNameNotFoundException {
-    ((Eval)cont.eval).extendEnvironment(cont.varName, val);
-    return cont.letBody.Eval(cont.eval);
+    // 新建 ExprVistor, 扩展环境（局部变量引入）, continuation 变短
+    ExprVisitor v = new ExprVisitor(
+      new ExtendEnv(cont.varName, val, cont.env),
+      cont.savedCont
+    );
+    return cont.letBody.Eval(v);
   }
 }

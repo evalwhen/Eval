@@ -1,7 +1,7 @@
 package com.eval.interpreter;
 
 public interface ExprVisitorI {
-  ExprValue visit(ConstExpr e);
+  ExprValue visit(ConstExpr e) throws VarNameNotFoundException;
   ExprValue visit(VarExpr e) throws VarNameNotFoundException;
   ExprValue visit(DiffExpr e);
   ExprValue visit(ZeroExpr e);

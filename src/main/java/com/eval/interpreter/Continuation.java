@@ -1,10 +1,11 @@
 package com.eval.interpreter;
 
 abstract class Continuation {
-  abstract ExprValue apply(ContVistorI ask, ExprValue val);
+  abstract ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException;
 }
 
 class EndCont extends Continuation {
+  Environment env;
   ExprValue apply(ContVistorI ask, ExprValue val) {
     return ask.visit(this, val);
   }
@@ -13,18 +14,18 @@ class EndCont extends Continuation {
 class LetCont extends Continuation {
   String varName;
   Expression letBody;
-//  Environment env;
-//  Continuation savedCont;
-  ExprVisitorI eval;
+  Environment env;
+  Continuation savedCont;
 
 
-  public LetCont(String varName, Expression letBody, ExprVisitorI eval) {
+  LetCont(String varName, Expression letBody, Environment env, Continuation cont) {
     this.varName = varName;
     this.letBody = letBody;
-    this.eval = eval;
+    this.env = env;
+    this.savedCont = cont;
   }
 
-  ExprValue apply(ContVistorI ask, ExprValue val) {
+  ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException {
     return ask.visit(this, val);
   }
 }

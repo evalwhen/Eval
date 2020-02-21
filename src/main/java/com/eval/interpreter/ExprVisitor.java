@@ -1,17 +1,18 @@
 package com.eval.interpreter;
 
-public class Eval implements ExprVisitorI {
-  Environment env;
+public class ExprVisitor implements ExprVisitorI {
+  private Environment env;
   EnvironmentVisitorI ask = new FindBinding();
 
-  Continuation cont;
-  ContVistorI contAsk;
+  private Continuation cont;
+  private ContVistorI contAsk = new ContApplyVistor();
 
-  public Eval(Environment env, Continuation cont) {
+  ExprVisitor(Environment env, Continuation cont) {
     this.env = env;
+    this.cont = cont;
   }
 
-  public ExprValue visit(ConstExpr e) {
+  public ExprValue visit(ConstExpr e) throws VarNameNotFoundException {
     return cont.apply(contAsk, new NumValue(e.getN())) ;
   }
 
@@ -33,7 +34,7 @@ public class Eval implements ExprVisitorI {
 
   //TODO: Remove VarNameNotFoundException
   public ExprValue visit(LetExpr e) throws VarNameNotFoundException {
-    this.cont = new LetCont(e.varName, e.body, this);
+    this.cont = new LetCont(e.varName, e.body, this.env, this.cont);
     return e.valExpr.Eval(this);
   }
 
@@ -47,9 +48,5 @@ public class Eval implements ExprVisitorI {
 
   public ExprValue visit(ProcedureExpr e) {
     return null;
-  }
-
-  public void extendEnvironment(String varName, ExprValue val) {
-    this.env = new ExtendEnv(varName, val, this.env);
   }
 }

@@ -3,11 +3,11 @@ package com.eval.interpreter;
 class ConstExpr extends Expression {
   private Integer n;
 
-  public ConstExpr(Integer n) {
+  ConstExpr(Integer n) {
     this.n = n;
   }
 
-  public Integer getN() {
+  Integer getN() {
     return n;
   }
 
@@ -15,7 +15,7 @@ class ConstExpr extends Expression {
     this.n = n;
   }
 
-  ExprValue Eval(ExprVisitorI ask) {
+  ExprValue Eval(ExprVisitorI ask) throws VarNameNotFoundException {
     return ask.visit(this);
   }
 }

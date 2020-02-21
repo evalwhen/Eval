@@ -3,7 +3,7 @@ package com.eval.interpreter;
 public class NumValue extends ExprValue {
   private Integer value;
 
-  public NumValue(Integer value) {
+  NumValue(Integer value) {
     this.value = value;
   }
 
@@ -12,5 +12,9 @@ public class NumValue extends ExprValue {
     return "NumValue{" +
       "value=" + value +
       '}';
+  }
+
+  Integer getValue() {
+    return value;
   }
 }

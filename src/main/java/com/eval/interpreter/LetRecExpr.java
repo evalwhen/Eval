@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class LetRecExpr extends Expression {
   private String procName;
@@ -11,5 +11,9 @@ class LetRecExpr extends Expression {
     this.varName = varName;
     ProcBody = procBody;
     this.letBody = letBody;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }

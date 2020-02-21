@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class IfExpr extends Expression {
   private Expression cond; // 条件必表达式
@@ -9,5 +9,9 @@ class IfExpr extends Expression {
     this.cond = cond;
     this.then = then;
     this.els = els;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }

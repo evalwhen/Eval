@@ -1,6 +1,6 @@
-package com.eval.value;
+package com.eval.interpreter;
 
-class BoolValue extends ExprValue {
+public class BoolValue extends ExprValue {
   private Boolean val;
 
   public BoolValue(Boolean val) {
@@ -10,7 +10,7 @@ class BoolValue extends ExprValue {
   @Override
   public String toString() {
     return "BoolValue{" +
-      "val=" + val +
+      "valExpr=" + val +
       '}';
   }
 }

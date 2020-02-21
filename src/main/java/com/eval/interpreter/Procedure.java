@@ -1,16 +1,15 @@
-package com.eval.value;
-
-import com.eval.expression.Expression;
+package com.eval.interpreter;
 
 class Procedure {
   private String varName;
   private Expression body;
-//TODO:  Environment env;
+  Environment env;
 
 
-  public Procedure(String varName, Expression body) {
+  public Procedure(String varName, Expression body, Environment env) {
     this.varName = varName;
     this.body = body;
+    this.env = env;
   }
 
   @Override

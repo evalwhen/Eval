@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class ConstExpr extends Expression {
   private Integer n;
@@ -13,5 +13,9 @@ class ConstExpr extends Expression {
 
   public void setN(Integer n) {
     this.n = n;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }

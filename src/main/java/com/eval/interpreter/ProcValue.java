@@ -1,6 +1,6 @@
-package com.eval.value;
+package com.eval.interpreter;
 
-class ProcValue extends ExprValue {
+public class ProcValue extends ExprValue {
   private Procedure proc;
 
   public ProcValue(Procedure proc) {

@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class ProcedureExpr extends Expression  {
   private String varName;
@@ -7,5 +7,9 @@ class ProcedureExpr extends Expression  {
   public ProcedureExpr(String varName, Expression body) {
     this.varName = varName;
     this.body = body;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }

@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class CallExpr extends Expression {
   private Expression procedure;
@@ -7,5 +7,9 @@ class CallExpr extends Expression {
   public CallExpr(Expression procedure, Expression argument) {
     this.procedure = procedure;
     this.argument = argument;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }

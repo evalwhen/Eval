@@ -1,6 +1,6 @@
-package com.eval.value;
+package com.eval.interpreter;
 
-class NumValue extends ExprValue{
+public class NumValue extends ExprValue {
   private Integer value;
 
   public NumValue(Integer value) {

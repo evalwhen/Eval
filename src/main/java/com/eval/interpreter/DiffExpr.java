@@ -1,4 +1,4 @@
-package com.eval.expression;
+package com.eval.interpreter;
 
 class DiffExpr extends Expression {
   private Expression exp1;
@@ -14,6 +14,10 @@ class DiffExpr extends Expression {
 
   public Expression getExp2() {
     return exp2;
+  }
+
+  ExprValue Eval(ExprVisitorI ask) {
+    return ask.visit(this);
   }
 }
 

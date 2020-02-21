@@ -1,5 +1,7 @@
 package com.eval.interpreter;
 
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 class LetExpr extends Expression {
   String varName;
   Expression valExpr;

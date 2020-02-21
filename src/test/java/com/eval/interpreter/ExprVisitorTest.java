@@ -1,6 +1,9 @@
 package com.eval.interpreter;
 
 
+import com.eval.interpreter.Environment.EmptyEnv;
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 import static org.junit.Assert.assertEquals;
 
 

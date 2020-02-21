@@ -1,6 +1,8 @@
-package com.eval.interpreter;
+package com.eval.interpreter.Environment;
 
-class ExtendEnv extends Environment {
+import com.eval.interpreter.ExprValue;
+
+public class ExtendEnv extends Environment {
   String varName;
   ExprValue value;
   Environment savedEnv;
@@ -15,7 +17,7 @@ class ExtendEnv extends Environment {
     return null;
   }
 
-  ExprValue findBinding(EnvironmentVisitorI ask, String var) throws VarNameNotFoundException {
+  public ExprValue findBinding(EnvVistorI ask, String var) throws VarNameNotFoundException {
     return (ExprValue)ask.visit(this, var);
   }
 }

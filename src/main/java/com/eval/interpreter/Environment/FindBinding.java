@@ -1,6 +1,10 @@
-package com.eval.interpreter;
+package com.eval.interpreter.Environment;
 
-class FindBinding implements EnvironmentVisitorI<ExprValue> {
+import com.eval.interpreter.ExprValue;
+import com.eval.interpreter.ProcValue;
+import com.eval.interpreter.Procedure;
+
+public class FindBinding implements EnvVistorI<ExprValue> {
   public ExprValue visit (EmptyEnv env, String var) throws VarNameNotFoundException {
     throw new VarNameNotFoundException("undefined variable" + var + "!\n");
   }

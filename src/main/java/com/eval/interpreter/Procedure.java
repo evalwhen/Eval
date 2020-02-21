@@ -1,9 +1,11 @@
 package com.eval.interpreter;
 
-class Procedure {
+import com.eval.interpreter.Environment.Environment;
+
+public class Procedure {
   private String varName;
   private Expression body;
-  Environment env;
+  private Environment env;
 
 
   public Procedure(String varName, Expression body, Environment env) {

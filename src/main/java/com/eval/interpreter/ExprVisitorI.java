@@ -1,5 +1,7 @@
 package com.eval.interpreter;
 
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 public interface ExprVisitorI {
   ExprValue visit(ConstExpr e) throws VarNameNotFoundException;
   ExprValue visit(VarExpr e) throws VarNameNotFoundException;

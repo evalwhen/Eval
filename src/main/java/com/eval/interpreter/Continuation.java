@@ -1,5 +1,8 @@
 package com.eval.interpreter;
 
+import com.eval.interpreter.Environment.Environment;
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 abstract class Continuation {
   abstract ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException;
 }

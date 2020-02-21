@@ -1,8 +1,13 @@
 package com.eval.interpreter;
 
+import com.eval.interpreter.Environment.Environment;
+import com.eval.interpreter.Environment.EnvVistorI;
+import com.eval.interpreter.Environment.FindBinding;
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 public class ExprVisitor implements ExprVisitorI {
   private Environment env;
-  EnvironmentVisitorI ask = new FindBinding();
+  EnvVistorI ask = new FindBinding();
 
   private Continuation cont;
   private ContVistorI contAsk = new ContApplyVistor();

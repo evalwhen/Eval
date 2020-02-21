@@ -1,5 +1,8 @@
 package com.eval.interpreter;
 
+import com.eval.interpreter.Environment.ExtendEnv;
+import com.eval.interpreter.Environment.VarNameNotFoundException;
+
 class ContApplyVistor implements ContVistorI {
   public ExprValue visit(EndCont cont, ExprValue val) {
     return val;

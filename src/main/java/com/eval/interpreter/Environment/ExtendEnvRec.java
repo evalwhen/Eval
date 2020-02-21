@@ -1,4 +1,7 @@
-package com.eval.interpreter;
+package com.eval.interpreter.Environment;
+
+import com.eval.interpreter.ExprValue;
+import com.eval.interpreter.Expression;
 
 class ExtendEnvRec extends Environment {
   String procName;
@@ -17,7 +20,7 @@ class ExtendEnvRec extends Environment {
     return null;
   }
 
-  ExprValue findBinding(EnvironmentVisitorI ask, String var) throws VarNameNotFoundException {
+  public ExprValue findBinding(EnvVistorI ask, String var) throws VarNameNotFoundException {
     return (ExprValue)ask.visit(this, var);
   }
 }

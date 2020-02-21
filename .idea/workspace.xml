@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="refactor: 凯撒的归凯撒。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/EndCont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/LetCont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/LetExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExprVisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/value/BoolValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/CallExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/CallExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ConstExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ConstExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContApplyVistor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContApplyVistor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ContVistorI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContVistorI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Continuation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/Continuation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/DiffExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/EmptyEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/EmptyEnv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/EnvVistorI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/EnvVistorI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/ExtendEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/ExtendEnv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/ExtendEnvRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/ExtendEnvRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/FindBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/FindBinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Environment/VarNameNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/VarNameNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/value/ExprValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ExprVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ExprVisitorI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Expression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/IfExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/IfExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/LetRecExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/LetRecExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/NumValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/NumValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ProcValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/value/ProcValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Procedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/value/Procedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ProcedureExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ProcedureExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/VarExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/VarExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ZeroExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ZeroExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/ExprVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/ExprVisitorTest.java" afterDir="false" />
+    <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,6 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -56,17 +24,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/LetExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ZeroExpr.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/VarExpr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="182">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding>
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -81,18 +62,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/ExprVisitorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ExprVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
@@ -101,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExprVisitorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="416">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/ExprVisitorI.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eval/interpreter/EvalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Eval.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eval/interpreter/ValueOfTest.java" />
@@ -247,6 +215,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/FindBinding.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/environment/ExtendEnvRec.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExprVisitorTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -281,67 +250,13 @@
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
@@ -490,7 +405,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582277075179</updated>
-      <workItem from="1582277081093" duration="20038000" />
+      <workItem from="1582277081093" duration="20280000" />
     </task>
     <task id="LOCAL-00001" summary="create Expression and ExpreValue.">
       <created>1582282476133</created>
@@ -527,16 +442,17 @@
       <option name="project" value="LOCAL" />
       <updated>1582299428371</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: regenerate test.">
+      <created>1582300951630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582300951630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValueOfTest_visit - 2020.02.21 at 22h 22m 51s.xml">
-      <configuration name="ValueOfTest.visit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValueOfTest_visit - 2020.02.21 at 22h 22m 57s.xml">
-      <configuration name="ValueOfTest.visit" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ValueOfTest_visit - 2020.02.21 at 22h 46m 47s.xml">
       <configuration name="ValueOfTest.visit" configurationId="JUnit" />
     </history-entry>
@@ -561,9 +477,15 @@
     <history-entry file="ExprVisitorTest - 2020.02.21 at 23h 58m 55s.xml">
       <configuration name="ExprVisitorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExprVisitorTest_visit_(1) - 2020.02.22 at 00h 01m 00s.xml">
+      <configuration name="ExprVisitorTest.visit (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExprVisitorTest_visit_(1) - 2020.02.22 at 00h 01m 21s.xml">
+      <configuration name="ExprVisitorTest.visit (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20038000" />
+    <option name="totallyTimeSpent" value="20280000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -588,12 +510,12 @@
       <window_info anchor="bottom" id="Messages" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.17704917" />
+      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.30601093" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2808743" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2808743" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -645,7 +567,8 @@
     <MESSAGE value="添加 let 表达式测试用例。" />
     <MESSAGE value="refactor: 分离出环境相关的代码。" />
     <MESSAGE value="refactor: 凯撒的归凯撒。" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 凯撒的归凯撒。" />
+    <MESSAGE value="refactor: regenerate test." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: regenerate test." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -815,35 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/VarExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ZeroExpr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ConstExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/LetExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -919,11 +817,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExprVisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="416">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ConstExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/LetExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/VarExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>

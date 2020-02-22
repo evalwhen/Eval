@@ -1,9 +1,6 @@
 package com.eval.interpreter.expression;
 
-import com.eval.interpreter.continuation.ContApplyVistor;
-import com.eval.interpreter.continuation.ContVistorI;
-import com.eval.interpreter.continuation.Continuation;
-import com.eval.interpreter.continuation.LetCont;
+import com.eval.interpreter.continuation.*;
 import com.eval.interpreter.environment.Environment;
 import com.eval.interpreter.environment.EnvVistorI;
 import com.eval.interpreter.environment.FindBinding;
@@ -15,7 +12,7 @@ public class ExprVisitor implements ExprVisitorI {
   EnvVistorI ask = new FindBinding();
 
   private Continuation cont;
-  private ContVistorI contAsk = new ContApplyVistor();
+  private ContVistorI contAsk = new ContApplyVisitor();
 
   public ExprVisitor(Environment env, Continuation cont) {
     this.env = env;
@@ -30,16 +27,19 @@ public class ExprVisitor implements ExprVisitorI {
     return cont.apply(contAsk, env.findBinding(ask, e.varName));
   }
 
-  public ExprValue visit(DiffExpr e) {
-    return null;
+  public ExprValue visit(DiffExpr e) throws VarNameNotFoundException {
+    this.cont = new DiffCont1(e.getExp2(), this.env, this.cont);
+    return e.getExp1().Eval(this);
   }
 
-  public ExprValue visit(ZeroExpr e) {
-    return null;
+  public ExprValue visit(ZeroExpr e) throws VarNameNotFoundException {
+    this.cont = new ZeroCont(this.cont);
+    return e.getExpr().Eval(this);
   }
 
-  public ExprValue visit(IfExpr e) {
-    return null;
+  public ExprValue visit(IfExpr e) throws VarNameNotFoundException {
+    this.cont = new IfCont(e.getThen(), e.getEls(), this.env, this.cont);
+    return e.getCond().Eval(this);
   }
 
   //TODO: Remove VarNameNotFoundException

@@ -6,9 +6,9 @@ import com.eval.interpreter.value.ExprValue;
 public interface ExprVisitorI {
   ExprValue visit(ConstExpr e) throws VarNameNotFoundException;
   ExprValue visit(VarExpr e) throws VarNameNotFoundException;
-  ExprValue visit(DiffExpr e);
-  ExprValue visit(ZeroExpr e);
-  ExprValue visit(IfExpr e);
+  ExprValue visit(DiffExpr e) throws VarNameNotFoundException;
+  ExprValue visit(ZeroExpr e) throws VarNameNotFoundException;
+  ExprValue visit(IfExpr e) throws VarNameNotFoundException;
   ExprValue visit(LetExp e) throws VarNameNotFoundException;
   ExprValue visit(CallExpr e);
   ExprValue visit(LetRecExpr e);

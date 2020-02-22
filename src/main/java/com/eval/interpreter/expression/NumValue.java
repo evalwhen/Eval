@@ -1,5 +1,6 @@
 package com.eval.interpreter.expression;
 
+import com.eval.interpreter.value.BoolValue;
 import com.eval.interpreter.value.ExprValue;
 
 public class NumValue extends ExprValue {
@@ -16,6 +17,17 @@ public class NumValue extends ExprValue {
       '}';
   }
 
+  public NumValue diff(NumValue that) {
+    return new NumValue(this.value - that.value);
+  }
+
+  public BoolValue isZero() {
+    if (value == 0) {
+      return new BoolValue(new Boolean(true));
+    } else {
+      return new BoolValue(new Boolean(false));
+    }
+  }
   public Integer getValue() {
     return value;
   }

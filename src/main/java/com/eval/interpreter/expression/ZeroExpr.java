@@ -12,4 +12,8 @@ class ZeroExpr extends Expression {
   public ExprValue Eval(ExprVisitorI ask) {
     return ask.visit(this);
   }
+
+  public Expression getExpr() {
+    return expr;
+  }
 }

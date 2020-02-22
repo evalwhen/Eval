@@ -16,4 +16,16 @@ class IfExpr extends Expression {
   public ExprValue Eval(ExprVisitorI ask) {
     return ask.visit(this);
   }
+
+  public Expression getCond() {
+    return cond;
+  }
+
+  public Expression getThen() {
+    return then;
+  }
+
+  public Expression getEls() {
+    return els;
+  }
 }

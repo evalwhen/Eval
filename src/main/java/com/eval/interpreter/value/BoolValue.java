@@ -13,4 +13,8 @@ public class BoolValue extends ExprValue {
       "valExpr=" + val +
       '}';
   }
+
+  public Boolean getVal() {
+    return val;
+  }
 }

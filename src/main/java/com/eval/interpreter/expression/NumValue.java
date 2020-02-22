@@ -28,6 +28,12 @@ public class NumValue extends ExprValue {
       return new BoolValue(new Boolean(false));
     }
   }
+
+  @Override
+  public boolean equals(Object o) {
+    return ((NumValue) o).value.intValue() == this.value.intValue();
+  }
+
   public Integer getValue() {
     return value;
   }

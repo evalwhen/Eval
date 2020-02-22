@@ -1,9 +1,9 @@
 package com.eval.interpreter.continuation;
 
-import com.eval.interpreter.value.ExprValue;
-import com.eval.interpreter.expression.Expression;
 import com.eval.interpreter.environment.Environment;
 import com.eval.interpreter.environment.VarNameNotFoundException;
+import com.eval.interpreter.expression.Expression;
+import com.eval.interpreter.value.ExprValue;
 
 public class LetCont extends Continuation {
   private String varName;
@@ -19,8 +19,8 @@ public class LetCont extends Continuation {
     this.savedCont = cont;
   }
 
-  public ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException {
-    return ask.visit(this, val);
+  public ExprValue apply(ContVistorI ask) throws VarNameNotFoundException {
+    return ask.visit(this);
   }
 
   public String getVarName() {

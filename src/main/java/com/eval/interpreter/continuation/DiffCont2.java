@@ -27,7 +27,7 @@ public class DiffCont2 extends Continuation {
     return savedCont;
   }
 
-  public ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException {
-    return ask.visit(this, val);
+  public ExprValue apply(ContVistorI ask) throws VarNameNotFoundException {
+    return ask.visit(this);
   }
 }

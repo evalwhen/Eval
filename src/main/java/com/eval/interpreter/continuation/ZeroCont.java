@@ -10,7 +10,7 @@ public class ZeroCont extends Continuation {
     this.savedCont = savedCont;
   }
 
-  public ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException {
+  public ExprValue apply(ContVistorI ask) throws VarNameNotFoundException {
     return null;
   }
 

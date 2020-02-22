@@ -18,8 +18,8 @@ public class IfCont extends Continuation {
     this.currentCont = currentCont;
   }
 
-  public ExprValue apply(ContVistorI ask, ExprValue val) throws VarNameNotFoundException {
-    return ask.visit(this, val);
+  public ExprValue apply(ContVistorI ask) throws VarNameNotFoundException {
+    return ask.visit(this);
   }
 
   public Expression getThen() {

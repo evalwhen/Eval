@@ -1,13 +1,15 @@
 package com.eval.interpreter.expression;
 
+import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.value.ExprValue;
 
 class DiffExpr extends Expression {
   private Expression exp1;
   private Expression exp2;
 
-  public DiffExpr(Expression exp1) {
+  public DiffExpr(Expression exp1, Expression exp2) {
     this.exp1 = exp1;
+    this.exp2 = exp2;
   }
 
   public Expression getExp1() {
@@ -18,7 +20,7 @@ class DiffExpr extends Expression {
     return exp2;
   }
 
-  public ExprValue Eval(ExprVisitorI ask) {
+  public ExprValue Eval(ExprVisitorI ask) throws VarNameNotFoundException {
     return ask.visit(this);
   }
 }

@@ -1,8 +1,8 @@
 package com.eval.interpreter.expression;
 
 import com.eval.interpreter.continuation.*;
-import com.eval.interpreter.environment.Environment;
 import com.eval.interpreter.environment.EnvVistorI;
+import com.eval.interpreter.environment.Environment;
 import com.eval.interpreter.environment.FindBinding;
 import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.value.ExprValue;
@@ -10,21 +10,26 @@ import com.eval.interpreter.value.ExprValue;
 public class ExprVisitor implements ExprVisitorI {
   private Environment env;
   EnvVistorI ask = new FindBinding();
-
   private Continuation cont;
-  private ContVistorI contAsk = new ContApplyVisitor();
 
   public ExprVisitor(Environment env, Continuation cont) {
     this.env = env;
     this.cont = cont;
   }
 
+  protected ContVistorI newContVistor(ExprValue value) {
+    return new ContApplyVisitor(value);
+
+  }
+
   public ExprValue visit(ConstExpr e) throws VarNameNotFoundException {
-    return cont.apply(contAsk, new NumValue(e.getN())) ;
+    ContVistorI contVistor = newContVistor(new NumValue(e.getN()));
+    return cont.apply(contVistor) ;
   }
 
   public ExprValue visit(VarExpr e) throws VarNameNotFoundException {
-    return cont.apply(contAsk, env.findBinding(ask, e.varName));
+    ContVistorI contVistor = newContVistor(env.findBinding(ask, e.varName));
+    return cont.apply(contVistor);
   }
 
   public ExprValue visit(DiffExpr e) throws VarNameNotFoundException {

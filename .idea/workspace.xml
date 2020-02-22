@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/DiffExprTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/IfExprTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContApplyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContApplyVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContVistorI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ContVistorI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/Continuation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/Continuation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/DiffCont1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/DiffCont1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/DiffCont2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/DiffCont2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/EndCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/EndCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/IfCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/IfCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/LetCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/LetCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ZeroCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/continuation/ZeroCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ExprVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ExprVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/IfExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/IfExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/NumValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/NumValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ZeroExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/ZeroExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExprVisitorTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,13 +89,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="416">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/DiffExprTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+            <state relative-caret-position="338">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -139,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/IfExprTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -524,7 +509,7 @@
       <updated>1582277075179</updated>
       <workItem from="1582277081093" duration="20390000" />
       <workItem from="1582301558134" duration="149000" />
-      <workItem from="1582301724301" duration="9563000" />
+      <workItem from="1582301724301" duration="9823000" />
     </task>
     <task id="LOCAL-00001" summary="create Expression and ExpreValue.">
       <created>1582282476133</created>
@@ -596,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582341626381</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor Continuation Apply visitor:&#10;&#10;使得该 Visitor 包含被应用的值 Val。避免了&#10;Val 在 visitor 和 continuation 做无用参数传递。">
+      <created>1582345734788</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582345734788</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -632,7 +624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30102000" />
+    <option name="totallyTimeSpent" value="30362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,9 +637,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1041" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20032051" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20032051" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -656,13 +647,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38579234" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38579234" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36284152" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30601093" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30601093" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32896176" />
@@ -733,7 +724,9 @@
     <MESSAGE value="remove .idea." />
     <MESSAGE value="fix typo." />
     <MESSAGE value="add other continuation." />
-    <option name="LAST_COMMIT_MESSAGE" value="add other continuation." />
+    <MESSAGE value="refactor Continuation Apply visitor:&#10;&#10;使得该 Visitor 包含被应用的值 Val。避免了&#10;Val 在 visitor 和 continuation 做无用参数传递。" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Continuation Apply visitor:&#10;&#10;使得该 Visitor 包含被应用的值 Val。避免了&#10;Val 在 visitor 和 continuation 做无用参数传递。" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/lang/Exception.class">
@@ -1035,16 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/ExpressionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1089,17 +1072,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/DiffExprTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/IfExprTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/DiffExprTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

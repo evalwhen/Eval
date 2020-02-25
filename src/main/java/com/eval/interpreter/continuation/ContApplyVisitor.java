@@ -31,6 +31,7 @@ public class ContApplyVisitor implements ContVistorI {
 
   public ExprValue visit(ZeroCont cont) throws VarNameNotFoundException {
     NumValue testValue = (NumValue) val;
+    this.val = testValue.isZero();
     return cont.getSavedCont().apply(this);
   }
 
@@ -80,6 +81,7 @@ public class ContApplyVisitor implements ContVistorI {
       new ExtendEnv(proc.getVarName(), this.val, proc.getEnv()),
       randCont.getCont()
     );
+    System.out.println(this.val);
     return proc.getBody().Eval(v);
   }
 

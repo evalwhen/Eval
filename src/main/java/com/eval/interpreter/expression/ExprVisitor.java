@@ -1,10 +1,7 @@
 package com.eval.interpreter.expression;
 
 import com.eval.interpreter.continuation.*;
-import com.eval.interpreter.environment.EnvVistorI;
-import com.eval.interpreter.environment.Environment;
-import com.eval.interpreter.environment.FindBinding;
-import com.eval.interpreter.environment.VarNameNotFoundException;
+import com.eval.interpreter.environment.*;
 import com.eval.interpreter.value.ExprValue;
 import com.eval.interpreter.value.ProcValue;
 import com.eval.interpreter.value.Procedure;
@@ -25,8 +22,8 @@ public class ExprVisitor implements ExprVisitorI {
   }
 
   public ExprValue visit(ConstExpr e) throws VarNameNotFoundException {
-    ContVistorI contVistor = newContVistor(new NumValue(e.getN()));
-    return cont.apply(contVistor) ;
+    ContVistorI contVisitor = newContVistor(new NumValue(e.getN()));
+    return cont.apply(contVisitor) ;
   }
 
   public ExprValue visit(VarExpr e) throws VarNameNotFoundException {
@@ -60,13 +57,17 @@ public class ExprVisitor implements ExprVisitorI {
     return e.getProcedure().Eval(this);
   }
 
-  public ExprValue visit(LetRecExpr e) {
-    return null;
+  public ExprValue visit(LetRecExpr e) throws VarNameNotFoundException {
+    ExprVisitor v = new ExprVisitor(
+      new ExtendEnvRec(e.getProcName(),e.getVarName(),e.getProcBody(),this.env),
+      this.cont
+    );
+    return e.getLetBody().Eval(v);
   }
 
   public ExprValue visit(ProcedureExpr e) throws VarNameNotFoundException {
-    ContVistorI contVistor = newContVistor(
+    ContVistorI contVisitor = newContVistor(
       new ProcValue(new Procedure(e.getVarName(), e.getBody(), this.env)));
-    return this.cont.apply(contVistor);
+    return this.cont.apply(contVisitor);
   }
 }

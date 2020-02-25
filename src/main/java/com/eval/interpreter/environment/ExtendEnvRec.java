@@ -1,9 +1,9 @@
 package com.eval.interpreter.environment;
 
-import com.eval.interpreter.value.ExprValue;
 import com.eval.interpreter.expression.Expression;
+import com.eval.interpreter.value.ExprValue;
 
-class ExtendEnvRec extends Environment {
+public class ExtendEnvRec extends Environment {
   private String procName;
   private String varName;
   private Expression body;

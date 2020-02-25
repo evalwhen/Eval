@@ -11,7 +11,7 @@ public class ZeroCont extends Continuation {
   }
 
   public ExprValue apply(ContVistorI ask) throws VarNameNotFoundException {
-    return null;
+    return ask.visit(this);
   }
 
   public Continuation getSavedCont() {

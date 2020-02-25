@@ -6,6 +6,8 @@ import com.eval.interpreter.expression.ExprVisitor;
 import com.eval.interpreter.expression.NumValue;
 import com.eval.interpreter.value.BoolValue;
 import com.eval.interpreter.value.ExprValue;
+import com.eval.interpreter.value.ProcValue;
+import com.eval.interpreter.value.Procedure;
 
 public class ContApplyVisitor implements ContVistorI {
   private ExprValue val;
@@ -59,6 +61,26 @@ public class ContApplyVisitor implements ContVistorI {
     } else {
       return ifCont.getEls().Eval(v);
     }
+  }
+
+  public ExprValue visit(OperatorCont ratorCont) throws VarNameNotFoundException {
+    ProcValue proc = (ProcValue) this.val;
+
+    ExprVisitor v = new ExprVisitor(
+      ratorCont.getCurrentEnv(),
+      new OperandCont(proc, ratorCont.getSavedCont())
+    );
+    return ratorCont.getArgument().Eval(v);
+  }
+
+  public ExprValue visit(OperandCont randCont) throws VarNameNotFoundException {
+    Procedure proc =
+      ((ProcValue) randCont.getProc()).getProc();
+    ExprVisitor v = new ExprVisitor(
+      new ExtendEnv(proc.getVarName(), this.val, proc.getEnv()),
+      randCont.getCont()
+    );
+    return proc.getBody().Eval(v);
   }
 
   public ExprValue getVal() {

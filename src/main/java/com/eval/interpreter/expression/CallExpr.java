@@ -1,5 +1,6 @@
 package com.eval.interpreter.expression;
 
+import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.value.ExprValue;
 
 class CallExpr extends Expression {
@@ -11,7 +12,15 @@ class CallExpr extends Expression {
     this.argument = argument;
   }
 
-  public ExprValue Eval(ExprVisitorI ask) {
+  public ExprValue Eval(ExprVisitorI ask) throws VarNameNotFoundException {
     return ask.visit(this);
+  }
+
+  public Expression getProcedure() {
+    return procedure;
+  }
+
+  public Expression getArgument() {
+    return argument;
   }
 }

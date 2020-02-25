@@ -6,6 +6,8 @@ import com.eval.interpreter.environment.Environment;
 import com.eval.interpreter.environment.FindBinding;
 import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.value.ExprValue;
+import com.eval.interpreter.value.ProcValue;
+import com.eval.interpreter.value.Procedure;
 
 public class ExprVisitor implements ExprVisitorI {
   private Environment env;
@@ -53,15 +55,18 @@ public class ExprVisitor implements ExprVisitorI {
     return e.valExpr.Eval(this);
   }
 
-  public ExprValue visit(CallExpr e) {
-    return null;
+  public ExprValue visit(CallExpr e) throws VarNameNotFoundException {
+    this.cont = new OperatorCont(e.getArgument(),this.env,this.cont);
+    return e.getProcedure().Eval(this);
   }
 
   public ExprValue visit(LetRecExpr e) {
     return null;
   }
 
-  public ExprValue visit(ProcedureExpr e) {
-    return null;
+  public ExprValue visit(ProcedureExpr e) throws VarNameNotFoundException {
+    ContVistorI contVistor = newContVistor(
+      new ProcValue(new Procedure(e.getVarName(), e.getBody(), this.env)));
+    return this.cont.apply(contVistor);
   }
 }

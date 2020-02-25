@@ -13,4 +13,8 @@ public class ProcValue extends ExprValue {
       "proc=" + proc +
       '}';
   }
+
+  public Procedure getProc() {
+    return proc;
+  }
 }

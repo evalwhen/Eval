@@ -10,7 +10,7 @@ public interface ExprVisitorI {
   ExprValue visit(ZeroExpr e) throws VarNameNotFoundException;
   ExprValue visit(IfExpr e) throws VarNameNotFoundException;
   ExprValue visit(LetExp e) throws VarNameNotFoundException;
-  ExprValue visit(CallExpr e);
+  ExprValue visit(CallExpr e) throws VarNameNotFoundException;
   ExprValue visit(LetRecExpr e);
-  ExprValue visit(ProcedureExpr e);
+  ExprValue visit(ProcedureExpr e) throws VarNameNotFoundException;
 }

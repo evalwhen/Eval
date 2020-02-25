@@ -11,4 +11,6 @@ public interface ContVistorI {
   ExprValue visit(DiffCont1 cont) throws VarNameNotFoundException;
   ExprValue visit(DiffCont2 diffCont2) throws VarNameNotFoundException;
   ExprValue visit(IfCont ifCont) throws VarNameNotFoundException;
+  ExprValue visit(OperatorCont ratorCont) throws VarNameNotFoundException;
+  ExprValue visit(OperandCont randCont) throws VarNameNotFoundException;
 }

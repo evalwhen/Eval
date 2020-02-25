@@ -1,7 +1,7 @@
 package com.eval.interpreter.value;
 
-import com.eval.interpreter.expression.Expression;
 import com.eval.interpreter.environment.Environment;
+import com.eval.interpreter.expression.Expression;
 
 public class Procedure {
   private String varName;
@@ -21,5 +21,17 @@ public class Procedure {
       "varName='" + varName + '\'' +
       ", body=" + body +
       '}';
+  }
+
+  public String getVarName() {
+    return varName;
+  }
+
+  public Expression getBody() {
+    return body;
+  }
+
+  public Environment getEnv() {
+    return env;
   }
 }

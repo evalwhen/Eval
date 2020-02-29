@@ -18,4 +18,8 @@ public class Node extends Ast {
       ", elts=" + elts +
       '}';
   }
+
+  NodeType getType() {
+    return type;
+  }
 }

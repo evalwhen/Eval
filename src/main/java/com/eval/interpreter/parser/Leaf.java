@@ -16,4 +16,8 @@ public class Leaf extends Ast {
       ", tok='" + tok + '\'' +
       '}';
   }
+
+  NodeType getType() {
+    return type;
+  }
 }

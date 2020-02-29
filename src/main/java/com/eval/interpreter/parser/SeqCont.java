@@ -1,24 +1,23 @@
 package com.eval.interpreter.parser;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SeqCont extends Continuation {
-  ArrayList<Parser> ps;
+  List<Parser> ps;
   List<Ast> nodes;
   Continuation savedCont;
 
-  public SeqCont(ArrayList<Parser> ps, List<Ast> nodes, Continuation savedCont) {
+  public SeqCont(List<Parser> ps, List<Ast> nodes, Continuation savedCont) {
     this.ps = ps;
     this.savedCont = savedCont;
     this.nodes = nodes;
   }
 
-  ParseResult accept(ContVI ask) {
+  ParseResult accept(ApplyContInterface ask) {
     return ask.visit(this);
   }
 
-  public ArrayList<Parser> getPs() {
+  public List<Parser> getPs() {
     return ps;
   }
 

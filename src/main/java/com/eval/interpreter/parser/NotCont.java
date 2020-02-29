@@ -9,7 +9,7 @@ public class NotCont extends Continuation {
     this.savedCont = savedCont;
   }
 
-  ParseResult accept(ContVI ask) {
+  ParseResult accept(ApplyContInterface ask) {
     return ask.visit(this);
   }
 

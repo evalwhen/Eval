@@ -7,15 +7,15 @@ public class StringParser extends Parser{
 
   ParseResult parse(String toks, Continuation cont) {
     if (toks.length() < match.length()) {
-      return cont.accept(new ContVisitor(new Failure(toks)));
+      return cont.accept(new ApplyCont(new Failure(toks)));
     } else if (toks.startsWith(match)) {
       Leaf l = new Leaf(Ast.NodeType.token, match);
       ArrayList<Ast> list = new ArrayList<Ast>();
       list.add(l);
-      ContVisitor v = new ContVisitor(new Success(list, toks.substring(match.length())));
-      return cont.accept(v);
+      ApplyCont a = new ApplyCont(new Success(list, toks.substring(match.length())));
+      return cont.accept(a);
     } else {
-      return cont.accept(new ContVisitor(new Failure(toks)));
+      return cont.accept(new ApplyCont(new Failure(toks)));
     }
   }
 

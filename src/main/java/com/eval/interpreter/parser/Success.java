@@ -1,10 +1,12 @@
 package com.eval.interpreter.parser;
 
+import java.util.List;
+
 public class Success extends ParseResult {
-  String result;
+  List<Ast> result;
   String rest;
 
-  public Success(String result, String rest) {
+  public Success(List<Ast> result, String rest) {
     this.result = result;
     this.rest = rest;
   }

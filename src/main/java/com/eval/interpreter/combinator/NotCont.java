@@ -1,10 +1,14 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
+import java.util.List;
+
 public class NotCont extends Continuation {
-  private String current_toks;
+  private List<Token> current_toks;
   private Continuation savedCont;
 
-  public NotCont(String current_toks, Continuation savedCont) {
+  public NotCont(List<Token> current_toks, Continuation savedCont) {
     this.current_toks = current_toks;
     this.savedCont = savedCont;
   }
@@ -13,7 +17,7 @@ public class NotCont extends Continuation {
     return ask.visit(this);
   }
 
-  public String getCurrent_toks() {
+  public List<Token> getCurrent_toks() {
     return current_toks;
   }
 

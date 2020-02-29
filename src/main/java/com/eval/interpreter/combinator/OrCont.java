@@ -1,13 +1,15 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
 import java.util.List;
 
 public class OrCont extends Continuation {
-  List<Parser> ps;
-  String toks;
-  Continuation savedCont;
+  private List<Parser> ps;
+  List<Token> toks;
+  private Continuation savedCont;
 
-  public OrCont(List<Parser> ps, String toks, Continuation savedCont) {
+  public OrCont(List<Parser> ps, List<Token> toks, Continuation savedCont) {
     this.ps = ps;
     this.toks = toks;
     this.savedCont = savedCont;
@@ -17,7 +19,7 @@ public class OrCont extends Continuation {
     return ps;
   }
 
-  public String getToks() {
+  public List<Token> getToks() {
     return toks;
   }
 

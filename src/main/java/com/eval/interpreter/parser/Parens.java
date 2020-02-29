@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Parens extends Parser {
 
-  public ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(List<Token> toks, Continuation cont) {
     return newParensP().parse(toks, cont);
   }
 

@@ -1,5 +1,9 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
+import java.util.List;
+
 public class TagParser extends Parser {
   private Ast.NodeType type;
   private Parser p;
@@ -9,7 +13,7 @@ public class TagParser extends Parser {
     this.p = p;
   }
 
-  public ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(List<Token> toks, Continuation cont) {
     return p.parse(toks, new TagCont(type, cont));
   }
 

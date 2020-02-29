@@ -1,14 +1,16 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
 import java.util.List;
 
 public class AndCont extends Continuation {
   private List<Parser> ps;
   private List<ParseResult> res;
-  private String toks;
+  private List<Token> toks;
   private Continuation savedCont;
 
-  public AndCont(List<Parser> ps, List<ParseResult> res, String toks, Continuation savedCont) {
+  public AndCont(List<Parser> ps, List<ParseResult> res, List<Token> toks, Continuation savedCont) {
     this.ps = ps;
     this.toks = toks;
     this.res = res;
@@ -23,7 +25,7 @@ public class AndCont extends Continuation {
     return ps;
   }
 
-  public String getToks() {
+  public List<Token> getToks() {
     return toks;
   }
 

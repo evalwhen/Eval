@@ -1,6 +1,8 @@
 package com.eval.interpreter.combinator;
 
 
+import com.eval.interpreter.parser.Token;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +18,11 @@ public class ApplyCont implements ApplyContInterface {
     if (v instanceof Success) {
       this.v = new Failure(((Success) v).rest); //failure
     } else { // parse failure
-      String rest = notCont.getCurrent_toks();
-      Leaf l = new Leaf(Ast.NodeType.token, rest.substring(0,1));
+      List<Token> rest = notCont.getCurrent_toks();
+      Leaf l = new Leaf(Ast.NodeType.token, rest.get(0).getElt());
       ArrayList<Ast> list = new ArrayList<Ast>();
       list.add(l);
-      this.v = new Success(list, rest.substring(1)); //success
+      this.v = new Success(list, rest.subList(1, rest.size())); //success
     }
     return notCont.getSavedCont().accept(this);
   }

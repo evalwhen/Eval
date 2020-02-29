@@ -1,11 +1,13 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
 import java.util.List;
 
 public class OrParser extends Parser {
-  List<Parser> ps;
+  private List<Parser> ps;
 
-  public ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(List<Token> toks, Continuation cont) {
     if (ps.isEmpty()) {
       ApplyCont v = new ApplyCont(new Failure(toks));
       return cont.accept(v);

@@ -1,5 +1,8 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class StarParser extends Parser{
@@ -11,9 +14,9 @@ public class StarParser extends Parser{
     this.nodes = nodes;
   }
 
-  public ParseResult parse(String toks, Continuation cont) {
-    if (toks.length() == 0) {
-      ApplyCont a = new ApplyCont(new Success(nodes, ""));
+  public ParseResult parse(List<Token> toks, Continuation cont) {
+    if (toks.size() == 0) {
+      ApplyCont a = new ApplyCont(new Success(nodes, new ArrayList<Token>()));
       return cont.accept(a);
     } else {
       return p.parse(toks, new StarCont(p, nodes, cont));

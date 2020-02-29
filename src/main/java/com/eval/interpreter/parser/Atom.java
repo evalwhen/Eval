@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Atom extends Parser {
-  public ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(List<Token> toks, Continuation cont) {
     return newAtomP().parse(toks, cont);
   }
 

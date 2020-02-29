@@ -1,9 +1,13 @@
 package com.eval.interpreter.combinator;
 
-public class Failure extends ParseResult {
-  String rest;
+import com.eval.interpreter.parser.Token;
 
-  public Failure(String toks) {
+import java.util.List;
+
+public class Failure extends ParseResult {
+  List<Token> rest;
+
+  public Failure(List<Token> toks) {
     this.rest = toks;
   }
 

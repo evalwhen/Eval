@@ -1,12 +1,14 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Token;
+
 import java.util.List;
 
 public class Success extends ParseResult {
   List<Ast> result;
-  String rest;
+  List<Token> rest;
 
-  public Success(List<Ast> result, String rest) {
+  public Success(List<Ast> result, List<Token> rest) {
     this.result = result;
     this.rest = rest;
   }

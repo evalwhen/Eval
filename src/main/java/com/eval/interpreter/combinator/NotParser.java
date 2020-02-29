@@ -1,9 +1,13 @@
 package com.eval.interpreter.combinator;
 
-public class NotParser extends Parser {
-  Parser p;
+import com.eval.interpreter.parser.Token;
 
-  public ParseResult parse(String toks, Continuation cont) {
+import java.util.List;
+
+public class NotParser extends Parser {
+  private Parser p;
+
+  public ParseResult parse(List<Token> toks, Continuation cont) {
     return p.parse(toks, new NotCont(toks, cont));
   }
 

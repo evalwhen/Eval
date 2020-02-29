@@ -1,11 +1,11 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 import java.util.ArrayList;
 
 public class StringParser extends Parser{
   String match;
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     if (toks.length() < match.length()) {
       return cont.accept(new ApplyCont(new Failure(toks)));
     } else if (toks.startsWith(match)) {

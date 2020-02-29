@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class StarParser extends Parser{
     this.nodes = nodes;
   }
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     if (toks.length() == 0) {
       ApplyCont a = new ApplyCont(new Success(nodes, ""));
       return cont.accept(a);

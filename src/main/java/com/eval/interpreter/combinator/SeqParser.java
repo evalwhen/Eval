@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ public class SeqParser extends Parser{
   List<Parser> ps;
   List<Ast> nodes;
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     if (ps.isEmpty()) {
       ApplyCont v = new ApplyCont(new Success(nodes, toks));
       return cont.accept(v);

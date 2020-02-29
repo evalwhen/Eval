@@ -1,5 +1,6 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Sexp;
 import org.junit.Test;
 
 import java.util.ArrayList;

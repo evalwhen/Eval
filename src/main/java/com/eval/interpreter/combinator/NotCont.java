@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 public class NotCont extends Continuation {
   private String current_toks;

@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 public interface ApplyContInterface {
   ParseResult visit(NotCont notCont);

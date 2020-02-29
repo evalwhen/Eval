@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ public class AndParser extends Parser {
   List<Parser> ps;
   List<ParseResult> res;
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     if (ps.isEmpty()) {
       ApplyCont a = new ApplyCont(this.getResLast());
       return cont.accept(a);

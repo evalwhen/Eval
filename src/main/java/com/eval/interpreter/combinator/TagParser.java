@@ -1,4 +1,4 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 public class TagParser extends Parser {
   private Ast.NodeType type;
@@ -9,7 +9,7 @@ public class TagParser extends Parser {
     this.p = p;
   }
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     return p.parse(toks, new TagCont(type, cont));
   }
 

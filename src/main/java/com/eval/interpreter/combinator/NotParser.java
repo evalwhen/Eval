@@ -1,9 +1,9 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 public class NotParser extends Parser {
   Parser p;
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     return p.parse(toks, new NotCont(toks, cont));
   }
 

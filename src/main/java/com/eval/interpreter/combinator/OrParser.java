@@ -1,11 +1,11 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.combinator;
 
 import java.util.List;
 
 public class OrParser extends Parser {
   List<Parser> ps;
 
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     if (ps.isEmpty()) {
       ApplyCont v = new ApplyCont(new Failure(toks));
       return cont.accept(v);

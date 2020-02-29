@@ -1,7 +1,9 @@
 package com.eval.interpreter.parser;
 
+import com.eval.interpreter.combinator.*;
+
 public class Start extends Parser {
-  ParseResult parse(String toks, Continuation cont) {
+  public ParseResult parse(String toks, Continuation cont) {
     return newStartP().parse(toks, cont);
   }
 

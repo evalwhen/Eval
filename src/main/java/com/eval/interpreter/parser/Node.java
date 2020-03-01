@@ -25,7 +25,7 @@ public class Node extends Ast {
     return type;
   }
 
-  Expression toExpr(AstVistor ask) throws InvalidSyntaxException {
+  public Expression toExpr(AstVistor ask) throws InvalidSyntaxException {
     return ask.visit(this);
   }
 
@@ -62,7 +62,7 @@ public class Node extends Ast {
 
   public Ast getLetBody() {
 
-    return  (Node) this.getElts().get(2);
+    return this.getElts().get(2);
   }
 
   public boolean isDiffExpr() {

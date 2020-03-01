@@ -6,5 +6,5 @@ public abstract class Ast {
   public enum NodeType {token, parens, number, sexp}
 
   public abstract NodeType getType();
-  abstract Expression toExpr(AstVistor ask) throws InvalidSyntaxException;
+  public abstract Expression toExpr(AstVistor ask) throws InvalidSyntaxException;
 }

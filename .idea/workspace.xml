@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstToExpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstVistor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/InvalidSyntaxException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/NodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ParserEndCont.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/AndParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/AndParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Ast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Leaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Leaf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/SeqCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/SeqCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/SeqParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/SeqParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StarCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StarCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StarParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StringParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StringParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/TagCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/TagCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/TagParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/TagParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/combinator/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/combinator/ParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/ScannerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Leaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Leaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,76 +28,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstToExpr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StringParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Atom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/combinator/ParserTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="998">
-              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            <state>
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/Expression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/ScannerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -118,19 +51,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="956">
+              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#1709#1710#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ParserEndCont.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -138,17 +85,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/NodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="208">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/LetRecExprTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Continuation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,8 +146,8 @@
       <list>
         <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -171,12 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/StarParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/StarCont.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/TagParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/TagCont.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/ApplyContInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/SeqParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/SeqCont.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AndParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/ParensParser.java" />
@@ -199,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/NotCont.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/AndCont.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/AndParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/TagParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StarParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/End.java" />
@@ -218,10 +197,17 @@
         <option value="$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/ScannerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/NodeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/StringParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstToExpr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ExecCont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Continuation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/EndCont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ParserEndCont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java" />
       </list>
     </option>
   </component>
@@ -298,85 +284,7 @@
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="Eval" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="combinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="value" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="combinator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Eval" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,7 +343,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NodeTest.toExpr">
+  <component name="RunManager" selected="Application.Interpreter">
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eval.interpreter.Interpreter" />
+      <module name="Eval" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eval.interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NodeTest.toExpr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Eval" />
       <extension name="coverage">
@@ -483,22 +404,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserTest.testTagParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Eval" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.eval.interpreter.parser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.eval.interpreter.combinator" />
-      <option name="MAIN_CLASS_NAME" value="com.eval.interpreter.combinator.ParserTest" />
-      <option name="METHOD_NAME" value="testTagParser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ScannerTest.scan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Eval" />
       <extension name="coverage">
@@ -517,11 +422,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Interpreter" />
         <item itemvalue="JUnit.NodeTest.toExpr" />
         <item itemvalue="JUnit.ScannerTest.scan" />
         <item itemvalue="JUnit.ParserTest" />
         <item itemvalue="JUnit.ParserTest.testSexpParser" />
-        <item itemvalue="JUnit.ParserTest.testTagParser" />
       </list>
     </recent_temporary>
   </component>
@@ -549,7 +454,7 @@
       <workItem from="1582545510623" duration="150000" />
       <workItem from="1582593659695" duration="10221000" />
       <workItem from="1582890321112" duration="44870000" />
-      <workItem from="1583045435226" duration="6338000" />
+      <workItem from="1583045435226" duration="8455000" />
     </task>
     <task id="LOCAL-00001" summary="create Expression and ExpreValue.">
       <created>1582282476133</created>
@@ -646,12 +551,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 22m 28s.xml">
-      <configuration name="NodeTest.toExpr" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 24m 51s.xml">
-      <configuration name="NodeTest.toExpr" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 24m 57s.xml">
       <configuration name="NodeTest.toExpr" configurationId="JUnit" />
     </history-entry>
@@ -676,9 +575,15 @@
     <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 30m 27s.xml">
       <configuration name="NodeTest.toExpr" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 36m 28s.xml">
+      <configuration name="NodeTest.toExpr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NodeTest_toExpr - 2020.03.01 at 16h 36m 29s.xml">
+      <configuration name="NodeTest.toExpr" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93264000" />
+    <option name="totallyTimeSpent" value="95381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,9 +596,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1041" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -702,13 +606,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21202186" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.41530055" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.13770492" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41530055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30601093" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30601093" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32896176" />
@@ -719,7 +623,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32959402" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -786,33 +690,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="add: scanner." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="53" column="171" selection-start-line="53" selection-start-column="171" selection-end-line="53" selection-end-column="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="13" column="125" selection-start-line="13" selection-start-column="125" selection-end-line="13" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Sexp2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/paserCombinator/ParensParser.java" />
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/List.class">
@@ -832,27 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Continuation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/NotCont.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -997,13 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstVisitorInterface.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1088,27 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/EOF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1119,29 +956,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/expression/CallExprTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/NodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1159,24 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/ScannerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1191,13 +991,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1225,8 +1018,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AstToExpr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="272">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/expression/DiffExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Success.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eval/interpreter/parser/NodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Continuation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ParserEndCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

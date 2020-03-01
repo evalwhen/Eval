@@ -23,7 +23,7 @@ public class Leaf extends Ast {
     return type;
   }
 
-  Expression toExpr(AstVistor ask) {
+  public Expression toExpr(AstVistor ask) {
     return ask.visit(this);
   }
 

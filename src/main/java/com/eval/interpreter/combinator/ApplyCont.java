@@ -103,4 +103,8 @@ public class ApplyCont implements ApplyContInterface {
       return tagCont.getCont().accept(this);
     }
   }
+
+  public ParseResult visit(ParserEndCont execCont) {
+    return v;
+  }
 }

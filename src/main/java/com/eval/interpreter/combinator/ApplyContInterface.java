@@ -14,4 +14,6 @@ public interface ApplyContInterface {
   ParseResult visit(StarCont starCont);
 
   ParseResult visit(TagCont tagCont);
+
+  ParseResult visit(ParserEndCont execCont);
 }

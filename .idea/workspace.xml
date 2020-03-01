@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0d3fdd-2303-4d23-a021-1a762a544509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ParserEndCont.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Eval_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Ast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Leaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Leaf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,13 +34,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -95,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
-              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,18 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -157,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/SeqCont.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/AndParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/ParensParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/SexpParser.java" />
@@ -208,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyContInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eval/interpreter/Interpreter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -253,6 +247,24 @@
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="Eval" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Eval" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Eval" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Eval" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Eval_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Eval" type="b2602c69:ProjectViewProjectNode" />
@@ -306,7 +318,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pysonar2/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -454,7 +466,7 @@
       <workItem from="1582545510623" duration="150000" />
       <workItem from="1582593659695" duration="10221000" />
       <workItem from="1582890321112" duration="44870000" />
-      <workItem from="1583045435226" duration="8455000" />
+      <workItem from="1583045435226" duration="9004000" />
     </task>
     <task id="LOCAL-00001" summary="create Expression and ExpreValue.">
       <created>1582282476133</created>
@@ -547,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582947424054</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add: interpreter main method.">
+      <created>1583053930984</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583053930984</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -583,7 +602,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95381000" />
+    <option name="totallyTimeSpent" value="95930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,7 +616,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1041" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -606,13 +625,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.13770492" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13770492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41530055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30601093" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30601093" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32896176" />
@@ -687,11 +706,11 @@
     <MESSAGE value="实现 Procedure Call and lexical scope." />
     <MESSAGE value="refactor ParseResult." />
     <MESSAGE value="add: scanner." />
-    <option name="LAST_COMMIT_MESSAGE" value="add: scanner." />
+    <MESSAGE value="add: interpreter main method." />
+    <option name="LAST_COMMIT_MESSAGE" value="add: interpreter main method." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/parser/Sexp2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/paserCombinator/ParensParser.java" />
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/List.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1063,7 +1082,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eval/interpreter/combinator/ApplyCont.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
-          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1121,6 +1140,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1139,10 +1165,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Eval:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

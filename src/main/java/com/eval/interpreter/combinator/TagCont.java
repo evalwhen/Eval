@@ -1,5 +1,7 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Ast;
+
 public class TagCont extends Continuation {
   private Ast.NodeType type;
   private Continuation cont;

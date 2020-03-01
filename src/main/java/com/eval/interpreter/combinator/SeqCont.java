@@ -1,5 +1,7 @@
 package com.eval.interpreter.combinator;
 
+import com.eval.interpreter.parser.Ast;
+
 import java.util.List;
 
 public class SeqCont extends Continuation {

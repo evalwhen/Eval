@@ -1,6 +1,9 @@
 package com.eval.interpreter.combinator;
 
 
+import com.eval.interpreter.parser.Ast;
+import com.eval.interpreter.parser.Leaf;
+import com.eval.interpreter.parser.Node;
 import com.eval.interpreter.parser.Token;
 
 import java.util.ArrayList;

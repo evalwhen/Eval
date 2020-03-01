@@ -3,7 +3,7 @@ package com.eval.interpreter.expression;
 import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.value.ExprValue;
 
-class DiffExpr extends Expression {
+public class DiffExpr extends Expression {
   private Expression exp1;
   private Expression exp2;
 

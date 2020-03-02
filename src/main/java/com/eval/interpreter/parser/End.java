@@ -1,6 +1,7 @@
 package com.eval.interpreter.parser;
 
 import com.eval.interpreter.combinator.*;
+import com.eval.interpreter.parser.Ast.Ast;
 
 import java.util.List;
 
@@ -10,6 +11,6 @@ public class End extends Parser {
   }
 
   private Parser newEndP() {
-    return new TagParser(Ast.NodeType.parens, new StringParser(")"));
+    return new TagParser(Ast.NodeType.phantom, new StringParser(")"));
   }
 }

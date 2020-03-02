@@ -1,6 +1,7 @@
-package com.eval.interpreter.parser;
+package com.eval.interpreter.parser.Ast;
 
 import com.eval.interpreter.expression.Expression;
+import com.eval.interpreter.parser.InvalidSyntaxException;
 
 public class Leaf extends Ast {
   NodeType type;
@@ -23,7 +24,7 @@ public class Leaf extends Ast {
     return type;
   }
 
-  public Expression toExpr(AstVistor ask) {
+  public Expression toExpr(AstVistor ask) throws InvalidSyntaxException {
     return ask.visit(this);
   }
 

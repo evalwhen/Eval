@@ -1,8 +1,7 @@
 package com.eval.interpreter.combinator;
 
-import com.eval.interpreter.parser.Ast;
-import com.eval.interpreter.parser.Scanner;
-import com.eval.interpreter.parser.Sexp;
+import com.eval.interpreter.parser.*;
+import com.eval.interpreter.parser.Ast.Ast;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -33,7 +32,7 @@ public class ParserTest {
 
     Parser p = new AndParser(ps, rest);
 
-    p.parse(scanner.scan("+ 1 2"), new PrintCont());
+//    p.parse(scanner.scan("+ 1 2"), new PrintCont());
     p.parse(scanner.scan("(+ 1 2)"), new PrintCont());
   }
 
@@ -47,7 +46,7 @@ public class ParserTest {
 
   @Test
   public void testTagParser() {
-    Parser p = new TagParser(Ast.NodeType.parens, new StringParser("("));
+    Parser p = new TagParser(Ast.NodeType.phantom, new StringParser("("));
 
     p.parse(scanner.scan("(00"), new PrintCont());
   }
@@ -56,5 +55,30 @@ public class ParserTest {
   public void testSexpParser() {
     Parser p = new Sexp();
     p.parse(scanner.scan("(+ 12 23 ( + 43 4444))"), new PrintCont());
+  }
+
+  @Test
+  public void testVarParser() {
+    Parser p = new VarNameParser();
+
+    p.parse(scanner.scan("haha"), new PrintCont());
+  }
+
+  @Test
+  public void testDiffParser() {
+    Parser p = new Diff();
+    p.parse(scanner.scan("(- 100 20)"), new PrintCont());
+  }
+
+  @Test
+  public void testBindingParser() {
+    Parser p = new Binding();
+    p.parse(scanner.scan("(haha (- 100 20))"), new PrintCont());
+  }
+
+  @Test
+  public void testLetParser() {
+    Parser p = new Let();
+    p.parse(scanner.scan("(let (x (- 100 20)) (- x 100))"), new PrintCont());
   }
 }

@@ -10,6 +10,7 @@ import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.expression.ExprVisitor;
 import com.eval.interpreter.expression.Expression;
 import com.eval.interpreter.expression.NumValue;
+import com.eval.interpreter.parser.Ast.AstToExpr;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

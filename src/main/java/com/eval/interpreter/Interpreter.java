@@ -10,7 +10,7 @@ import com.eval.interpreter.environment.VarNameNotFoundException;
 import com.eval.interpreter.expression.ExprVisitor;
 import com.eval.interpreter.expression.Expression;
 import com.eval.interpreter.expression.NumValue;
-import com.eval.interpreter.parser.AstToExpr;
+import com.eval.interpreter.parser.Ast.AstToExpr;
 import com.eval.interpreter.parser.InvalidSyntaxException;
 import com.eval.interpreter.parser.Scanner;
 import com.eval.interpreter.parser.Sexp;

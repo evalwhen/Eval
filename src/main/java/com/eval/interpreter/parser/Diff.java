@@ -6,25 +6,20 @@ import com.eval.interpreter.parser.Ast.Ast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Parens extends Parser {
-
-  public ParseResult parse(List<Token> toks, Continuation cont) {
-    return newParensP().parse(toks, cont);
-  }
-
+public class Diff extends Parens {
+  @Override
   protected List<Parser> sequence() {
     List<Parser> l = new ArrayList<Parser>();
     l.add(new Start());
-    l.add(new StarParser(new Sexp(), new ArrayList<Ast>()));
+    l.add(new TagParser(Ast.NodeType.phantom, new StringParser("-")));
+    l.add(new Sexp());
+    l.add(new Sexp());
     l.add(new End());
     return l;
   }
 
+  @Override
   protected Ast.NodeType resultType() {
-    return Ast.NodeType.sexp;
-  }
-
-  private Parser newParensP() {
-    return new TagParser(resultType(), new SeqParser(sequence(), new ArrayList<Ast>()));
+    return Ast.NodeType.diff;
   }
 }

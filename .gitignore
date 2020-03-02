@@ -2,4 +2,5 @@ target
 .settings
 .settings/*
 out
-.iead/workspace.xml
+.idea/workspace.xml
+.idea/emacs.xml

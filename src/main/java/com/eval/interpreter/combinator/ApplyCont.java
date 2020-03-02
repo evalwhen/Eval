@@ -1,9 +1,9 @@
 package com.eval.interpreter.combinator;
 
 
-import com.eval.interpreter.parser.Ast;
-import com.eval.interpreter.parser.Leaf;
-import com.eval.interpreter.parser.Node;
+import com.eval.interpreter.parser.Ast.Ast;
+import com.eval.interpreter.parser.Ast.Leaf;
+import com.eval.interpreter.parser.Ast.Node;
 import com.eval.interpreter.parser.Token;
 
 import java.util.ArrayList;
@@ -19,10 +19,10 @@ public class ApplyCont implements ApplyContInterface {
   public ParseResult visit(NotCont notCont) {
     // parse success
     if (v instanceof Success) {
-      this.v = new Failure(((Success) v).rest); //failure
+      this.v = new Failure(notCont.getCurrent_toks()); //failure
     } else { // parse failure
       List<Token> rest = notCont.getCurrent_toks();
-      Leaf l = new Leaf(Ast.NodeType.token, rest.get(0).getElt());
+      Leaf l = new Leaf(Ast.NodeType.varname, rest.get(0).getElt());
       ArrayList<Ast> list = new ArrayList<Ast>();
       list.add(l);
       this.v = new Success(list, rest.subList(1, rest.size())); //success
@@ -89,7 +89,8 @@ public class ApplyCont implements ApplyContInterface {
     if (v instanceof Success) {
       List<Ast> result =  new ArrayList<Ast>();
       for (Ast node : ((Success) v).result) {
-        if (node.getType() != Ast.NodeType.parens) {
+        Ast.NodeType nodeType = node.getType();
+        if (nodeType != Ast.NodeType.phantom) {
           result.add(node);
         }
       }

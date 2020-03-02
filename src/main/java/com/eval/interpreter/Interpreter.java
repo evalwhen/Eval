@@ -1,19 +1,9 @@
 package com.eval.interpreter;
 
-import com.eval.interpreter.combinator.ParseResult;
-import com.eval.interpreter.combinator.Parser;
-import com.eval.interpreter.combinator.ParserEndCont;
-import com.eval.interpreter.combinator.Success;
-import com.eval.interpreter.continuation.EndCont;
-import com.eval.interpreter.environment.EmptyEnv;
 import com.eval.interpreter.environment.VarNameNotFoundException;
-import com.eval.interpreter.expression.ExprVisitor;
-import com.eval.interpreter.expression.Expression;
 import com.eval.interpreter.expression.NumValue;
-import com.eval.interpreter.parser.Ast.AstToExpr;
 import com.eval.interpreter.parser.InvalidSyntaxException;
 import com.eval.interpreter.parser.Scanner;
-import com.eval.interpreter.parser.Sexp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,20 +25,8 @@ public class Interpreter {
           continue;
         } else {
 
-          Parser p = new Sexp();
-          ParseResult pr;
-          pr = p.parse(scanner.scan(line), new ParserEndCont());
-          AstToExpr ate = new AstToExpr();
-
-          Expression letExpr;
-          if (pr instanceof Success) {
-            letExpr = ((Success)pr).getResult().get(0).toExpr(ate);
-            ExprVisitor ev = new ExprVisitor(new EmptyEnv(), new EndCont());
-            NumValue val = (NumValue)letExpr.Eval(ev);
-            System.out.println(val.getValue());
-          } else {
-            System.out.println("Parse failure!");
-          }
+          NumValue val = (NumValue) Eval.eval(scanner.scan(line));
+          System.out.println(val.getValue());
         }
       } catch (IOException e) {
         e.printStackTrace();

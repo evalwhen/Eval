@@ -38,10 +38,6 @@ public class Scanner {
   }
 
   private boolean isDelim(String str, int start) {
-    if (str.charAt(start) == '(' || str.charAt(start) == ')') {
-      return true;
-    } else {
-      return false;
-    }
+    return str.charAt(start) == '(' || str.charAt(start) == ')';
   }
 }
